@@ -1,0 +1,212 @@
+/* Universal Styles */
+h1, h2, h3 {
+    font-family: 'Zilla Slab', serif;
+}
+
+a, p {
+    font-family: 'Arsenal', sans-serif;
+    color: black;
+}
+
+header {
+    height: 80px;
+    background-color: rgb(247, 243, 243);
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+header nav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+nav a {
+    margin: 10px;
+}
+
+.welcome {
+    width: 100%;
+    background-image: url('/images/computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+}
+
+.welcome-text {
+    background-color: gainsboro;
+    width: 100%;
+    opacity: 0.7;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.about h2 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.about img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 30%;
+}
+
+.about p {
+    float: right;
+    margin: 0;
+    margin-right: 15%;
+    margin-top: 50px;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 40px;
+    border: 1px solid black;
+}
+
+.project img {
+    height: 200px;
+    width: 200px;
+}
+
+.project h3, p{
+    margin: 5px 0;
+}
+
+.project a {
+    margin: 0 5px;
+}
+
+.contact {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.contact p {
+    display: inline-block;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 1150px) {
+    .about img {
+        margin-left: 20%;
+    }
+    
+    .about p {
+        margin-right: 15%;
+    }
+    
+}
+
+@media only screen and (max-width: 960px) {
+    .about img {
+        margin-left: 10%;
+    }
+    
+    .about p {
+        margin-right: 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 960px) {
+    .about img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .about p {
+        float: none;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .welcome {
+        height: 300px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        position: static;
+    }
+    
+    header h1 {
+        position: static;
+        display: block;
+        transform: none;
+        -ms-transform: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header nav {
+        position: static;
+        transform: none;
+        -ms-transform: none;
+        float: none;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .project {
+        text-align: center;
+        display: inline-block;
+        margin: 10px 40px;
+        border: 1px solid black;
+    }
+    
+    .project img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .project {
+        margin: 15px 20px;
+    }
+
+    .project img {
+        height: 125px;
+        width: 125px;
+    }
+}
